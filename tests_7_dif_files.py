@@ -31,7 +31,7 @@ def test_create_arch(arc_files):
 
 
 def test_open_files(arc_files):
-    with zipfile.ZipFile("resources/test.zip") as zip_fileсв:
+    with zipfile.ZipFile("resources/test.zip") as zip_file:
         # print(zip_file.namelist())
         with zip_file.open("bububu.pdf") as pdf:
             reader = PdfReader(pdf)
